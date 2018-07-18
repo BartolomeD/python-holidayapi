@@ -4,7 +4,7 @@ import requests
 
 
 class Api:
-    def __init__(self, key):
+    def __init__(self):
         self.key = os.environ['HOLIDAY_API_KEY']
 
     def holidays(self, params):
