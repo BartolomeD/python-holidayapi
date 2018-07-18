@@ -10,6 +10,8 @@ class Api:
     def holidays(self, params):
         url = 'https://holidayapi.com/v1/holidays?'
 
+        params['key'] = self.key
+
         response = requests.get(url, params=params);
         data = json.loads(response.text)
 
